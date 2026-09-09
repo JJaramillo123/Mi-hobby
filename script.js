@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // Animación mínima: las tarjetas de la galería aparecen al hacer scroll
-  var galleryItems = document.querySelectorAll('.gallery-item');
-  if (galleryItems.length && 'IntersectionObserver' in window) {
+  // Animación mínima: la galería y las tarjetas aparecen al hacer scroll
+  var animatedItems = document.querySelectorAll('.gallery-item, .reveal');
+  if (animatedItems.length && 'IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.15 });
 
-    galleryItems.forEach(function (item) {
+    animatedItems.forEach(function (item) {
       observer.observe(item);
     });
   } else {
     // Si el navegador no soporta IntersectionObserver, se muestran directamente
-    galleryItems.forEach(function (item) {
+    animatedItems.forEach(function (item) {
       item.classList.add('is-visible');
     });
   }
