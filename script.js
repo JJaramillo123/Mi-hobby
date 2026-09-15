@@ -1,4 +1,4 @@
-// Mi Fin de Semana Futbolero - script.js
+// Mi Hobby: El Fútbol - script.js
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -8,7 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (navToggle) {
     navToggle.addEventListener('click', function () {
-      navLinks.classList.toggle('show');
+      var isOpen = navLinks.classList.toggle('show');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('show');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
     });
   }
 
@@ -16,28 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var yearSpan = document.getElementById('year');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
-  }
-
-  // Animación mínima: la galería y las tarjetas aparecen al hacer scroll
-  var animatedItems = document.querySelectorAll('.gallery-item, .reveal');
-  if (animatedItems.length && 'IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    animatedItems.forEach(function (item) {
-      observer.observe(item);
-    });
-  } else {
-    // Si el navegador no soporta IntersectionObserver, se muestran directamente
-    animatedItems.forEach(function (item) {
-      item.classList.add('is-visible');
-    });
   }
 
   // Validación del formulario de contacto

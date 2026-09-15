@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Hobby: El Fútbol</title>
+<meta name="description" content="Una página sobre mi pasión por el fútbol: información sobre el hobby, beneficios, galería, consejos y contacto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="logo">Mi Hobby: El Fútbol</a>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#hobby">Mi hobby</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#consejos">Consejos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. PÁGINA PRINCIPAL -->
+  <section id="inicio" class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Fútbol europeo, cada fin de semana</p>
+        <h1 class="hero__title">Un buen partido no<br>necesita explicación.</h1>
+        <p class="hero__lead">El fútbol es mi hobby desde hace años. Simplemente me gusta verlo, disfruto los partidos y no me pierdo la oportunidad de ver un buen encuentro cuando puedo. Aquí comparto un poco de por qué me gusta tanto.</p>
+        <a href="#hobby" class="btn">Conoce mi hobby</a>
+      </div>
+      <div class="hero__ticket" aria-hidden="true">
+        <div class="ticket">
+          <span class="ticket__label">Sigo</span>
+          <span class="ticket__value">Premier League</span>
+          <span class="ticket__value ticket__value--muted">LaLiga · Serie A</span>
+          <div class="ticket__divider"></div>
+          <span class="ticket__label">Este mes</span>
+          <span class="ticket__value">UEFA Champions League</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. INFORMACIÓN SOBRE EL HOBBY -->
+  <section id="hobby" class="section">
+    <div class="container section__grid">
+      <div class="section__intro">
+        <h2 class="section-title">Mi hobby: el fútbol</h2>
+        <p>El fútbol me gusta desde hace mucho tiempo. Disfruto ver los partidos, sentir la emoción de un encuentro reñido y esa sensación de no saber cómo va a terminar hasta el final. Es un deporte que engancha, y verlo se ha vuelto una de mis actividades favoritas para relajarme.</p>
+        <p>Sigo principalmente el fútbol europeo, en particular la Premier League, LaLiga y la Serie A. Los fines de semana suelo sentarme desde la mañana a ver varios partidos seguidos, aunque disfruto viendo fútbol cuando se pueda, entre semana o fin de semana, como este mes con la Champions.</p>
+      </div>
+      <div class="leagues">
+        <article class="league-chip league-chip--pl">
+          <span class="league-chip__flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+          <h3>Premier League</h3>
+          <p>Inglaterra — mi liga principal. Partidos rápidos, poco tiempo muerto, siempre hay opciones de gol.</p>
+        </article>
+        <article class="league-chip league-chip--laliga">
+          <span class="league-chip__flag">🇪🇸</span>
+          <h3>LaLiga</h3>
+          <p>España — la veo en los partidos importantes. Me gusta el nivel técnico de los jugadores.</p>
+        </article>
+        <article class="league-chip league-chip--seriea">
+          <span class="league-chip__flag">🇮🇹</span>
+          <h3>Serie A</h3>
+          <p>Italia — la que más me ha sorprendido. Equipos ordenados, partidos que se sienten como ajedrez.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. BENEFICIOS -->
+  <section id="beneficios" class="section section--turf">
+    <div class="container">
+      <h2 class="section-title">Beneficios de seguir el fútbol</h2>
+      <p class="section-lead">Más allá de que simplemente me gusta, ver fútbol regularmente me ha traído cosas buenas que no esperaba.</p>
+      <div class="benefit-list">
+        <div class="benefit-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
+          <div>
+            <h3>Es un buen descanso</h3>
+            <p>Sentarme a ver un partido es una forma fácil de desconectarme un rato de la universidad y del celular.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v10H8l-4 4V5z"/></svg>
+          <div>
+            <h3>Da temas de conversación</h3>
+            <p>Es un buen punto en común con amigos y compañeros, incluso con gente que no conozco tan bien.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          <div>
+            <h3>Enseña sobre estrategia</h3>
+            <p>Ver cómo un equipo cambia su forma de jugar según el rival me ha hecho pensar más en toma de decisiones bajo presión.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. GALERÍA DE IMÁGENES -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2 class="section-title">Galería</h2>
+      <div class="mosaic">
+        <figure class="mosaic__item mosaic__item--tall">
+          <img src="images/Estadio.jpg" alt="Estadio de fútbol">
+          <figcaption><h3>Estadio</h3><p>Spotify Camp Nou, del FC Barcelona</p></figcaption>
+        </figure>
+        <figure class="mosaic__item">
+          <img src="images/Cancha.jpg" alt="Cancha de fútbol">
+          <figcaption><h3>Cancha</h3><p>Old Trafford, estadio del Manchester United</p></figcaption>
+        </figure>
+        <figure class="mosaic__item">
+          <img src="images/Arco.jpg" alt="Arco de fútbol">
+          <figcaption><h3>Arco</h3><p>El Allianz Arena</p></figcaption>
+        </figure>
+        <figure class="mosaic__item mosaic__item--wide">
+          <img src="images/Balon.jpg" alt="Balón de fútbol">
+          <figcaption><h3>Balón</h3><p>Balón oficial de la UEFA Champions League</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONSEJOS -->
+  <section id="consejos" class="section section--turf">
+    <div class="container">
+      <h2 class="section-title">Consejos para empezar a ver fútbol</h2>
+      <div class="tips">
+        <div class="tip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <div>
+            <h3>Elige una liga para empezar</h3>
+            <p>No trates de seguir todo a la vez. Yo empecé con la Premier League y de ahí fui sumando las demás poco a poco.</p>
+          </div>
+        </div>
+        <div class="tip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3 3-5 7-5s7 2 7 5"/><circle cx="17" cy="8" r="2.3"/><path d="M16.5 13.2c2.6.4 4.5 2.1 4.5 4.8"/></svg>
+          <div>
+            <h3>Sigue a un equipo</h3>
+            <p>Tener un equipo favorito hace que cada partido importe más y sea más fácil mantener el interés.</p>
+          </div>
+        </div>
+        <div class="tip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.4l6-.8L12 3z"/></svg>
+          <div>
+            <h3>No te pierdas los clásicos</h3>
+            <p>Partidos como el Real Madrid contra Barcelona o los derbis locales suelen ser los más emocionantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FORMULARIO DE CONTACTO -->
+  <section id="contacto" class="section section--contact">
+    <div class="container section__grid section__grid--contact">
+      <div class="section__intro">
+        <h2 class="section-title">Contacto</h2>
+        <p>¿También te gusta el fútbol europeo? Escríbeme y hablamos del próximo partido.</p>
+      </div>
+      <form id="contactForm" class="form" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required minlength="2">
+          <span class="error" id="error-nombre"></span>
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+          <span class="error" id="error-correo"></span>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required minlength="10"></textarea>
+          <span class="error" id="error-mensaje"></span>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- 7. PIE DE PÁGINA -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Mi Hobby: El Fútbol — Proyecto para la asignatura Construcción de Software.</p>
+    <p>© <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
